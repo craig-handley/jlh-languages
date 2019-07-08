@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8">
+  <title>JLH Languages</title>
+</head>
+
+<body>
+  {{> header}}
+  <div class="body-sytle">
+    <h1>Current Courses</h1>
+    <h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Venue</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each courses}}
+          <tr>
+            <td>{{date}}</td>
+            <td>{{time}}</td>
+            <td>{{venue}}</td>
+            <td>{{details}}</td>
+          </tr>
+          {{/each}}
+
+          <!--
+          <tr>
+            <td>Monday</td>
+            <td>6.00 - 7.30pm</td>
+            <td>Pelsall Village Centre, WS3 4LX</td>
+            <td>Beginners / Mixed Ability French</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>2.00 - 3.00pm</td>
+            <td>Caffe Del Nino, Cannock, WS11 1GR</td>
+            <td>Advanced conversation *</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>1.30 - 3.00pm</td>
+            <td>Cannock Library, WS11 1AA</td>
+            <td>Mixed Ability French</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>3.45 - 5.15pm</td>
+            <td>Cheslyn Hay Village Hall, WS6 7HP</td>
+            <td>Improvers French **</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>6.00 - 7.30pm</td>
+            <td>Cheslyn Hay Village Hall, WS6 7HP</td>
+            <td>Mixed Ability French</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>1.30 - 3.00pm</td>
+            <td>Burntwood Library, WS7 2BX</td>
+            <td>Beginners / Mixed Ability French</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>7.00 - 8.30pm</td>
+            <td>St. Dominic's School, Brewood, ST19 9BA</td>
+            <td>Beginners / Mixed Ability French</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>1.30 - 3.00pm</td>
+            <td>Cannock Library, WS11 1AA</td>
+            <td>Mixed Ability French</td>
+          </tr>
+          -->
+        </tbody>
+      </table>
+      <br />
+      <p>
+        New courses for beginners and mixed abiity students starting June 2019. Call Jane for details.
+      </p>
+      <p>
+        * Advanced Conversation: For fluent or near-fluent speakers of French. Come along and chat or discuss the issues
+        of the day.
+      </p>
+      <p>
+        ** Improvers: Learners have a sound grasp of French grammar and want to improve their spoken French in order to
+        communicate effectively in the language.
+      </p>
+      <p>
+        First session free.
+      </p>
+      <p>
+        If you are interested in attending a course at any of these locations please get in touch (jane@jlhlanguages.org
+        /
+        07793 556020) stating the venue(s) of interest and the relevant French course (beginner / mixed ability /
+        intermediate / advanced.)
+      </p>
+      <p>
+        If none of these locations are suitable please send details of a town / village near you and we will do our best
+        to accommodate your request.
+      </p>
+
+
+
+      <p>
+        <u>JLH Languages will provide:</u>
+        <ul>
+          <li>A weekly lesson of 90 minutes</li>
+          <li>All materials used during the lesson (material from the lesson is e-mailed out after the lesson each week
+            so
+            you can go over anything you want to at your leisure.)</li>
+          <li>A drink during the short break</li>
+          <li>Regular tips of how to learn and links to useful websites/TV or radio programmes that may be of interest
+            to
+            learners of French</li>
+        </ul>
+      </p>
+
+      <p>
+        <u>Terms and Conditions:</u>
+        <ul>
+          <li>Individual lessons are £15, a bundle of 5 lessons is £65</li>
+          <li>Payment can be made by bank transfer or in cash</li>
+          <li>Payment must be made prior to the lesson</li>
+          <li>If the client cannot attend a lesson due to a foreseeable event (e.g. hospital appointment) payment will
+            not
+            be taken for that lesson as long as the client gives at least 24 hours notice. That lesson will take place
+            at
+            the next available date</li>
+        </ul>
+      </p>
+    </h3>
+  </div>
+  {{> footer}}
+</body>
+
+</html>
