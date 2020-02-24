@@ -34,7 +34,7 @@ app.get('/', async (req, res) => {
 
 app.get('/adultcourses', async (req, res) => {
     try {
-        const courses = await Course.find().sort({sort: 1});
+        const courses = await Course.find().sort({ sort: 1 });
 
         res.render('adultcourses.hbs', {
             courses
@@ -57,6 +57,26 @@ app.get('/tutoring', async (req, res) => {
 app.get('/schools', async (req, res) => {
     try {
         res.render('schools.hbs', {
+
+        });
+    } catch (e) {
+        res.status(400).send(e);
+    }
+});
+
+app.get('/schools-french', async (req, res) => {
+    try {
+        res.render('schools-french.hbs', {
+
+        });
+    } catch (e) {
+        res.status(400).send(e);
+    }
+});
+
+app.get('/schools-spanish', async (req, res) => {
+    try {
+        res.render('schools-spanish.hbs', {
 
         });
     } catch (e) {
